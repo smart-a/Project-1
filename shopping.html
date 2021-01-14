@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <title>Project#1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- Top menu -->
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="#news">Item Page</a>
+      <a class="active" href="shopping.html">Shopping</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content">
+      <div class="shopping-cart">
+        <div class="title">Shopping cart</div>
+        <table>
+          <tr>
+            <th>Items</th>
+            <th>Property/ Rate</th>
+            <th>Quantity</th>
+            <th>Total Cost</th>
+          </tr>
+          <tbody>
+            <!--Item 1-->
+            <tr>
+              <td class="item-column">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="item1"
+                    onclick="sandwichHandler()"
+                  />
+                  <label for="item1"> Sandwich </label>
+                </div>
+                <img src="sandwich.jpg" alt="Sandwich" />
+              </td>
+              <td class="props">
+                <div>
+                  <input
+                    type="radio"
+                    checked
+                    id="sandwich1"
+                    name="sandwich"
+                    onclick="sandwichHandler()"
+                  />
+                  <label for="sandwich1">
+                    sandwich 1
+                    <span class="amount">1,000</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="sandwich2"
+                    name="sandwich"
+                    onclick="sandwichHandler()"
+                  />
+                  <label for="sandwich2">
+                    sandwich 2
+                    <span class="amount">500</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="sandwich3"
+                    name="sandwich"
+                    onclick="sandwichHandler()"
+                  />
+                  <label for="sandwich3">
+                    sandwich 3
+                    <span class="amount">200</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="none1"
+                    name="sandwich"
+                    onclick="sandwichHandler()"
+                  />
+                  <label for="none1"> None </label>
+                </div>
+              </td>
+              <td>
+                <select name="" id="sandwich_qty" onclick="sandwichHandler()">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </td>
+              <td>
+                <div class="total" id="sandwich_total">0</div>
+              </td>
+            </tr>
+
+            <!--Item 2-->
+            <tr>
+              <td class="item-column">
+                <div>
+                  <input type="checkbox" id="item2" onclick="steakHandler()" />
+                  <label for="item2"> Steak </label>
+                </div>
+                <img src="steak.jpg" alt="Steak" />
+              </td>
+              <td class="props">
+                <div>
+                  <input
+                    type="radio"
+                    checked
+                    id="steak1"
+                    name="steak"
+                    onclick="steakHandler()"
+                  />
+                  <label for="steak1">
+                    steak 1
+                    <span class="amount">1,500</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="steak2"
+                    name="steak"
+                    onclick="steakHandler()"
+                  />
+                  <label for="steak2">
+                    steak 2
+                    <span class="amount">800</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="steak3"
+                    name="steak"
+                    onclick="steakHandler()"
+                  />
+                  <label for="steak3">
+                    steak 3
+                    <span class="amount">500</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="none2"
+                    name="steak"
+                    onclick="steakHandler()"
+                  />
+                  <label for="none2"> None </label>
+                </div>
+              </td>
+              <td>
+                <select name="" id="steak_qty" onclick="steakHandler()">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </td>
+              <td>
+                <div class="total" id="steak_total">0</div>
+              </td>
+            </tr>
+
+            <!--Item 3-->
+            <tr>
+              <td class="item-column">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="item3"
+                    onclick="cherriesHandler()"
+                  />
+                  <label for="item3"> Cherries </label>
+                </div>
+                <img src="cherries.jpg" alt="Cherries" />
+              </td>
+              <td class="props">
+                <div>
+                  <input
+                    type="radio"
+                    checked
+                    id="cherries1"
+                    name="cherries"
+                    onclick="cherriesHandler()"
+                  />
+                  <label for="cherries1">
+                    cherries 1
+                    <span class="amount">500</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="cherries2"
+                    name="cherries"
+                    onclick="cherriesHandler()"
+                  />
+                  <label for="cherries2">
+                    cherries 2
+                    <span class="amount">400</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="cherries3"
+                    name="cherries"
+                    onclick="cherriesHandler()"
+                  />
+                  <label for="cherries3">
+                    cherries 3
+                    <span class="amount">300</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="none3"
+                    name="cherries"
+                    onclick="cherriesHandler()"
+                  />
+                  <label for="none3"> None </label>
+                </div>
+              </td>
+              <td>
+                <select name="" id="cherries_qty" onclick="cherriesHandler()">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                </select>
+              </td>
+              <td>
+                <div class="total" id="cherries_total">0</div>
+              </td>
+            </tr>
+
+            <!--Item 4-->
+            <tr>
+              <td class="item-column">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="item4"
+                    onclick="popsicleHandler()"
+                  />
+                  <label for="item4"> Popsicle </label>
+                </div>
+                <img src="popsicle.jpg" alt="Popsicle" />
+              </td>
+              <td class="props">
+                <div>
+                  <input
+                    type="radio"
+                    checked
+                    id="popsicle1"
+                    name="popsicle"
+                    onclick="popsicleHandler()"
+                  />
+                  <label for="popsicle1">
+                    popsicle 1
+                    <span class="amount">600</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="popsicle2"
+                    name="popsicle"
+                    onclick="popsicleHandler()"
+                  />
+                  <label for="popsicle2">
+                    popsicle 2
+                    <span class="amount">400</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="popsicle3"
+                    name="popsicle"
+                    onclick="popsicleHandler()"
+                  />
+                  <label for="popsicle3">
+                    popsicle 3
+                    <span class="amount">200</span>
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="none4"
+                    name="popsicle"
+                    onclick="popsicleHandler()"
+                  />
+                  <label for="none4"> None </label>
+                </div>
+              </td>
+              <td>
+                <select name="" id="popsicle_qty" onclick="popsicleHandler()">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </td>
+              <td>
+                <div class="total" id="popsicle_total">0</div>
+              </td>
+            </tr>
+
+            <!--Total-->
+            <tr>
+              <td colspan="2">Total Cost (After 15% discount)</td>
+              <td>
+                <input
+                  type="button"
+                  value="Calculate"
+                  onclick="totalHandler()"
+                />
+              </td>
+              <td>
+                <div class="total" id="grand_total">0</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End page content -->
+    </div>
+
+    <footer class="footer">We appreciate your patronage!!!</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
