@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <title>Project#1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- Top menu -->
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="items.html">Item Page</a>
+      <a href="shopping.html">Shopping</a>
+      <a class="active" href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content">
+      <div class="header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="top-text">
+        <img
+          src="images/pizza.jpg"
+          alt="Tablesetting"
+          width="500"
+          height="650"
+        />
+        <div class="top-side-text" style="padding-top: 0; margin-top: 0px">
+          <div class="form-container">
+            <h4 style="padding-top: 0; margin-top: 0px">
+              Swing by for a cup of coffee, or leave us a message:
+            </h4>
+            <form>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                required
+                placeholder="Your name.."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                required
+                placeholder="Your last name.."
+              />
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Message</label>
+              <textarea
+                id="subject"
+                name="subject"
+                required
+                placeholder="Write something.."
+                style="height: 165px"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End page content -->
+    </div>
+
+    <footer class="footer">We appreciate your patronage!!!</footer>
+  </body>
+</html>
